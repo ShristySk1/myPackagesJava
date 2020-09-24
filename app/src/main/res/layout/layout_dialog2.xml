@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/fleet_select_dialog">
+
+    <EditText
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edit_fence2"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="15dip"
+        android:singleLine="true"
+        android:inputType="textCapWords"/>
+
+    <ExpandableListView
+        android:layout_below="@+id/edit_fence2"
+        android:layout_marginTop="5dip"
+        android:id="@+id/lvExp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/colorAccent"
+        android:dividerHeight="1dp"
+        android:layout_marginBottom="30dip"
+        android:layout_above="@+id/footerview" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:id="@+id/footerview"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:paddingBottom="10dip"
+            android:id="@+id/button_view"
+            android:textSize="24dip"
+            android:background="#ffffffff"
+            android:paddingLeft="20dip"
+            android:paddingRight="8dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/waiting"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="Loading..."
+            android:id="@+id/textView16" />
+    </RelativeLayout>
+</RelativeLayout>
